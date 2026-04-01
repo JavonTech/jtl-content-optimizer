@@ -84,7 +84,7 @@ ${context ? `Additional Context: ${context}` : ""}
 Output ONLY the post text — no preamble, no labels, no quotes. The post should be ready to publish.`;
 
     const message = await anthropic.messages.create({
-      model: "claude-opus-4-6",
+      model: "claude-opus-4-5",
       max_tokens: 1024,
       system: systemPrompt,
       messages: [{ role: "user", content: userPrompt }],

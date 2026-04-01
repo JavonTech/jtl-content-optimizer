@@ -80,7 +80,7 @@ Provide a structured analysis covering:
 Be specific to the actual data. Reference real patterns from the posts.`;
 
     const message = await anthropic.messages.create({
-      model: "claude-opus-4-6",
+      model: "claude-opus-4-5",
       max_tokens: 2048,
       system: systemPrompt,
       messages: [{ role: "user", content: userPrompt }],
